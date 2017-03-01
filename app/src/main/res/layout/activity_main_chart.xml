@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_chart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hhstu.cyy.cyy.activity.chart.MainChartActivity">
+    <include layout="@layout/include_view_top" />
+    <com.hhstu.cyy.cyy.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/bt_1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="ChartActivity" />
+
+            <Button
+                android:id="@+id/bt_2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="LineChartViewActivity"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="HelloChartsActivity"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/bt_4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="MyChartsActivity"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </com.hhstu.cyy.cyy.view.ReboundScrollView>
+</LinearLayout>

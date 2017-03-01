@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_charts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.hhstu.cyy.cyy.activity.chart.MyChartsActivity">
+
+    <include layout="@layout/include_view_top" />
+
+    <com.hhstu.cyy.cyy.activity.chart.MyNestedScrollView
+        android:id="@+id/mnsl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.hhstu.cyy.cyy.activity.chart.MyLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.hhstu.cyy.cyy.activity.chart.MyChartView
+                android:id="@+id/CvTest"
+                android:layout_width="@dimen/x1000"
+                android:layout_height="@dimen/x1000"
+                android:background="@color/bg_red" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="代码运行后，事件首先由 TouchEventActivity 的 dispatchTouchEvent 方法分发给 TouchEventFather 控件的 dispatchTouchEvent，而该控件的 dispatchTouchEvent 返回 super.dispatchTouchEvent(ev)，表示对事件进行分发并向下传递给 TouchEventFather 控件的 onInterceptTouchEvent 方法，该方法返回 true 表示对所获取到的事件进行拦截并将事件传递给 TouchEventFather 控件的 onTouchEvent 进行处理，TouchEventFather 控件的 onTouchEvent 返回 super.onTouchEvent(ev) 表示对事件没有做任何处理直接将事件返回给上级控件，由于 TouchEventFather 获取的事件直接来自 TouchEventActivity，所以 TouchEventFather 控件的 onTouchEvent 会将事件以冒泡方式直接返回给 TouchEventActivity 的 onTouchEvent 进行消费，后续的事件则会跳过 TouchEventFather 直接由 TouchEventActivity 的 onTouchEvent 消费来自 TouchEventActivity 自身分发的事件。代码运行后，事件首先由 TouchEventActivity 的 dispatchTouchEvent 方法分发给 TouchEventFather 控件的 dispatchTouchEvent，而该控件的 dispatchTouchEvent 返回 super.dispatchTouchEvent(ev)，表示对事件进行分发并向下传递给 TouchEventFather 控件的 onInterceptTouchEvent 方法，该方法返回 true 表示对所获取到的事件进行拦截并将事件传递给 TouchEventFather 控件的 onTouchEvent 进行处理，TouchEventFather 控件的 onTouchEvent 返回 super.onTouchEvent(ev) 表示对事件没有做任何处理直接将事件返回给上级控件，由于 TouchEventFather 获取的事件直接来自 TouchEventActivity，所以 TouchEventFather 控件的 onTouchEvent 会将事件以冒泡方式直接返回给 TouchEventActivity 的 onTouchEvent 进行消费，后续的事件则会跳过 TouchEventFather 直接由 TouchEventActivity 的 onTouchEvent 消费来自 TouchEventActivity 自身分发的事件。代码运行后，事件首先由 TouchEventActivity 的 dispatchTouchEvent 方法分发给 TouchEventFather 控件的 dispatchTouchEvent，而该控件的 dispatchTouchEvent 返回 super.dispatchTouchEvent(ev)，表示对事件进行分发并向下传递给 TouchEventFather 控件的 onInterceptTouchEvent 方法，该方法返回 true 表示对所获取到的事件进行拦截并将事件传递给 TouchEventFather 控件的 onTouchEvent 进行处理，TouchEventFather 控件的 onTouchEvent 返回 super.onTouchEvent(ev) 表示对事件没有做任何处理直接将事件返回给上级控件，由于 TouchEventFather 获取的事件直接来自 TouchEventActivity，所以 TouchEventFather 控件的 onTouchEvent 会将事件以冒泡方式直接返回给 TouchEventActivity 的 onTouchEvent 进行消费，后续的事件则会跳过 TouchEventFather 直接由 TouchEventActivity 的 onTouchEvent 消费来自 TouchEventAc代码运行后，事件首先由 TouchEventActivity 的 dispatchTouchEvent 方法分发给 TouchEventFather 控件的 dispatchTouchEvent，而该控件的 dispatchTouchEvent 返回 super.dispatchTouchEvent(ev)，表示对事件进行分发并向下传递给 TouchEventFather 控件的 onInterceptTouchEvent 方法，该方法返回 true 表示对所获取到的事件进行拦截并将事件传递给 TouchEventFather 控件的 onTouchEvent 进行处理，TouchEventFather 控件的 onTouchEvent 返回 super.onTouchEvent(ev) 表示对事件没有做任何处理直接将事件返回给上级控件，由于 TouchEventFather 获取的事件直接来自 TouchEventActivity，所以 TouchEventFather 控件的 onTouchEvent 会将事件以冒泡方式直接返回给 TouchEventActivity 的 onTouchEvent 进行消费，后续的事件则会跳过 TouchEventFather 直接由 TouchEventActivity 的 onTouchEvent 消费来自 TouchEventActivity 自身分发的事件。tivity 自身分发的事件。"
+                android:visibility="visible" />
+        </com.hhstu.cyy.cyy.activity.chart.MyLinearLayout>
+
+    </com.hhstu.cyy.cyy.activity.chart.MyNestedScrollView>
+
+
+</LinearLayout>

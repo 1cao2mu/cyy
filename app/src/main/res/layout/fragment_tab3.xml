@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <include layout="@layout/include_view_top" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bt_1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:text="Ultra Pull to Refresh"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/bt_2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:text="仿微信选择多张图片"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/bt_3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:text="6.0权限"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/bt_4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:text="SHARE_SDK"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/bt_5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:text="SHARE_SDK分平台"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/bt_6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="百度地图"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/bt_7"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="各种图(MPAndroidChart)"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/bt_8"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="高德地图"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/bt_9"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="jsoup"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

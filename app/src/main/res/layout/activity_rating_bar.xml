@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_view_top" />
+
+    <com.hhstu.cyy.cyy.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <RatingBar
+                android:stepSize="1"
+                android:rating="2"
+                android:id="@+id/ratingbar_Indicator"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RatingBar
+                android:id="@+id/ratingbar_Small"
+                style="?android:attr/ratingBarStyleSmall"
+                android:stepSize="1"
+                android:rating="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="20" />
+
+            <RatingBar
+                android:id="@+id/ratingbar_default"
+                style="?android:attr/ratingBarStyle"
+                android:stepSize="1"
+                android:rating="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.hhstu.cyy.cyy.view.StarBar
+                android:id="@+id/starBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ratingbar:starCount="8"
+                ratingbar:starDistance="5dp"
+                ratingbar:starEmpty="@drawable/star_empty"
+                ratingbar:starFill="@drawable/star_full"
+                ratingbar:starSize="30dp" />
+
+            <com.hhstu.cyy.cyy.view.StarBar
+                android:id="@+id/sb_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ratingbar:starCount="5"
+                ratingbar:starDistance="5dp"
+                ratingbar:starEmpty="@drawable/ic_star_33_33_full"
+                ratingbar:starFill="@drawable/ic_star_33_33_fill"
+                ratingbar:starSize="30dp" />
+
+            <CheckBox
+                android:id="@+id/cb"
+                android:layout_width="wrap_content"
+                android:checked="true"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </com.hhstu.cyy.cyy.view.ReboundScrollView>
+</LinearLayout>
