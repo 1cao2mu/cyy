@@ -15,6 +15,7 @@ allprojects {
     repositories {
         jcenter()
     }
+    //for
 }
 
 task clean(type: Delete) {
